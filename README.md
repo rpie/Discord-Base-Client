@@ -1,2 +1,2 @@
-# discord.io-Client-Base
-A simple base client made with discord.io
+# Discord Client Base
+A simple base client made for Discord
