@@ -1,0 +1,14 @@
+{
+  "name": "HellCord",
+  "version": "1.0.0",
+  "description": "A minimal Discord client",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "HellSec",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^9.4.0"
+  }
+}
