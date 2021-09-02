@@ -1,7 +1,7 @@
 "use strict";
 
 (function () {
-    // Discord Bot Token here
+    // Grab token from storage
     const token = localStorage.getItem("token");
     
     // Discord Gateway url
@@ -70,15 +70,19 @@
 
         let parent = document.createElement("div"); // a message container. contains avatar, username, and msg
         parent.classList.add("msg");
-        
-        if (avatarImg == '') {
 
+        if (avatar == "null" | avatar == null){
+            let avatarImg = document.createElement("img"); // create img for avatar
+            avatarImg.classList.add("ava");
+            avatarImg.src = "images/profilePictures/pfp.png";
+            parent.appendChild(avatarImg);
         }
-
-        let avatarImg = document.createElement("img"); // create img for avatar
-        avatarImg.classList.add("ava");
-        avatarImg.src = "https://cdn.discordapp.com/avatars/" + userid + "/" + avatar + ".png";
-        parent.appendChild(avatarImg);
+        else{
+            let avatarImg = document.createElement("img"); // create img for avatar
+            avatarImg.classList.add("ava");
+            avatarImg.src = "https://cdn.discordapp.com/avatars/" + userid + "/" + avatar + ".png";
+            parent.appendChild(avatarImg);
+        }
         
         let usernameDiv = document.createElement("div"); // username text element
         usernameDiv.classList.add("author");

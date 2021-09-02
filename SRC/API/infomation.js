@@ -23,7 +23,12 @@ async function getInfomation() {
         const avatarEN = userinfo.avatar;
         const userID = userinfo.id;
 
-        const avatar = `https://cdn.discordapp.com/avatars/${userID}/${avatarEN}`;
+        if (avatarEN == "null" | avatarEN == null){
+            const avatar = "images/profilePictures/pfp.png";
+        }
+        else{
+            const avatar = `https://cdn.discordapp.com/avatars/${userID}/${avatarEN}`;
+        }
 
         document.getElementById("ava").src = avatar;
     }
