@@ -11,8 +11,9 @@ async function getRequestAPI(token) {
     return response;
 }
 
-async function getInfomation(token) {
+async function getInfomation() {
     try {
+        var token = localStorage.getItem("token"); 
         const jsonResp = await getRequestAPI(token);
         const userinfo = JSON.parse(jsonResp.body);
 

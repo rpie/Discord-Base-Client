@@ -15,16 +15,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <script type="text/javascript" src="API/infomation.js"></script>
+    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    
+    <script src="API/infomation.js"></script>
+    <script src="API/websocket.js"></script>
     <script>
-        function login(){
-            const token = localStorage.getItem('token');
-            const infom = getInfomation(token);
-        }
+      getInfomation();
     </script>
   </head>
-  <body onload="login()">
+  <body>
 
     <header id="titlebar">
       <div id="drag-region">
@@ -58,16 +57,17 @@
           <h1 class="animate__animated animate__fadeInDown">HellCord</h1><br>
         </center>
         <div class="serverInfo">
-            <span id="currentServer">Server</span><span> - </span><span id="currentChannel">#general</span>
+            <span id="currentServer">IRIS</span><span> - </span><span id="currentChannel">#general</span>
         </div>
-        <pre class="messaging">
-          <div id="channelSelector">
-              <br><br><br><br><br><br><br><br><br><br>
+
+        <div id="chatbox">
+          <div class="msg">
+              <img src="https://cdn.discordapp.com/avatars/876502362175447100/6357c113ffcc76dd81ed6ae074559f32.png" class="ava">
+              <p class="author">HellSec</p>
+              <p class="text">Testing</p>
           </div>
-        </pre>
-        <form>
-            <input type="text" placeholder="Message" class="input-main" id="message" style="width:100%;">
-        </form>
+      </div>
+
       </div>
 
     <div id="settings">
@@ -78,7 +78,7 @@
     </div>
 
     <div class="userinfo">
-        <img id="ava" src="https://temp.com" class="avatar">
+        <img id="ava" src="images/profilePictures/pfp.png" class="avatar">
     </div>
 
     </div>

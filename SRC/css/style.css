@@ -10,7 +10,12 @@ body {
   color: rgb(207, 207, 207);
   height: 100vh;
   padding:0;
+  overflow: hidden;
   margin:0;
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
 }
 
 
@@ -220,10 +225,22 @@ body {
     margin-bottom: 20px;
 }
 
+.text {
+  font-size: small;
+}
+
 .avatar {
   height: 50px;
   width: 50px;
-  border: 1px solid;
+  border: 2px solid #c7716b;
+  border-radius: 50px
+}
+
+.ava {
+  height: 30px;
+  width: 30px;
+  border: 2px solid #c7716b;
+  border-radius: 50px
 }
 
 .user {
@@ -271,3 +288,51 @@ body {
 .serverInfo {
   font-weight: 900;
 }
+
+#chatbox {
+  overflow-y: scroll;
+  overflow: hidden;
+  padding: 10px;
+}
+
+#chatbox > .msg {
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+
+#chatbox > .msg > .author, #chatbox > .msg > .text {
+  font-size: 15pt;
+  display: inline;
+  padding-left: 5px;
+}
+
+#chatbox > .msg > .avatar {
+  border-radius: 50px;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+#chatbox > .msg > .author {
+  font-weight: bolder;
+  overflow: hidden;
+}
+
+ /* width */
+ ::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+} 
