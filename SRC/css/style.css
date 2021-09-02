@@ -221,8 +221,9 @@ body {
 }
 
 .avatar {
-  height: 30px;
-  width: 30px;
+  height: 50px;
+  width: 50px;
+  border: 1px solid;
 }
 
 .user {
@@ -265,4 +266,8 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.serverInfo {
+  font-weight: 900;
 }

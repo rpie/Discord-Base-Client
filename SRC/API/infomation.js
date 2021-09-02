@@ -24,7 +24,6 @@ async function getInfomation(token) {
 
         const avatar = `https://cdn.discordapp.com/avatars/${userID}/${avatarEN}`;
 
-        document.getElementById("un").innerHTML = `${username}#${discrimi}`;
         document.getElementById("ava").src = avatar;
     }
     catch (error) {

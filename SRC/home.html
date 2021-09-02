@@ -30,9 +30,7 @@
       <div id="drag-region">
 
         <div id="window-title">
-            <span>
-                HellCord
-            </span>
+            <span>HellCord</span>
         </div>
 
         <div id="window-controls">
@@ -59,7 +57,9 @@
         <center>
           <h1 class="animate__animated animate__fadeInDown">HellCord</h1><br>
         </center>
-        <span>Current Channel: </span><span id="currentChannel">None</span>
+        <div class="serverInfo">
+            <span id="currentServer">Server</span><span> - </span><span id="currentChannel">#general</span>
+        </div>
         <pre class="messaging">
           <div id="channelSelector">
               <br><br><br><br><br><br><br><br><br><br>
@@ -72,15 +72,13 @@
 
     <div id="settings">
         <br>
-        <a class="settings" href="settings.html">
-            <i class="fa fa-cog fa-1x" aria-hidden="true"></i>
+        <a class="settings" href="index.html">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
         </a>
     </div>
 
     <div class="userinfo">
-        <span id="status">Offline<span>
         <img id="ava" src="https://temp.com" class="avatar">
-        <span id="un" class="user">Unknown User</span>
     </div>
 
     </div>
