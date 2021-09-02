@@ -15,8 +15,21 @@ A simple base client made for Discord
     |_|       .'   \_.'   
                           
 ```
+## Basics
 
-### Updates
+### Description
+A basic Discord client with needed features
+  * Messaging
+  * Account Detials
+  * Server Creation and Picker
+
+
+### Token Authentication
+Discord uses a token based authentication system, the token is stored in the headers or every request.
+We use tokens to login due to Discords' Auth system not doing cross origin requests.
+
+
+## Updates
 All updates of HellCord
   * Added login feature
   * Basic UI for messaging
@@ -24,19 +37,6 @@ All updates of HellCord
   * Infomation Grabbing Via v9 API
   * User Status Changer
 
-## Basics
 
-# Description
-A basic Discord client with needed features
-  * Messaging
-  * Account Detials
-  * Server Creation and Picker
-
-
-# Token Authentication
-Discord uses a token based authentication system, the token is stored in the headers or every request.
-We use tokens to login due to Discords' Auth system not doing cross origin requests.
-
-
-# Contact Us
+## Contact Us
 Any requests for information, questions, or comments regarding this advisory should be forwarded to hellsec@fbi.ac
