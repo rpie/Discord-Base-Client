@@ -20,7 +20,7 @@ A simple base client made for Discord
 ### Description
 A basic Discord client with needed features
   * Messaging
-  * Account Detials
+  * Account Details
   * Server Creation and Picker
 
 
