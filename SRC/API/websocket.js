@@ -5,7 +5,7 @@
     const token = localStorage.getItem("token");
     
     // Discord Gateway url
-    const GATEWAY_URL = "wss://gateway.discord.gg/?v=6&encoding=json";
+    const GATEWAY_URL = "wss://gateway.discord.gg/?v=9&encoding=json";
     
     // Websocket object
     let ws = null;
