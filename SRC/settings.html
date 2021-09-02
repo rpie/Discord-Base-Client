@@ -14,24 +14,23 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script type="text/javascript" src="API/login.js"></script>
-
+    <script type="text/javascript" src="API/infomation.js"></script>
     <script>
-      function getInfo(){
-        const token = document.getElementById('token').value;
-        checkLogin(token);
-      }
+        function login(){
+            const token = localStorage.getItem('token');
+            const infom = getInfomation(token);
+        }
     </script>
-
   </head>
-  <body>
+  <body onload="login()">
 
     <header id="titlebar">
       <div id="drag-region">
 
         <div id="window-title">
-          <span>HellCord v0.1</span>
+            <i class="fa fa-diamond" aria-hidden="true"> </i><span id="un" class="user">Unknown User</span>
         </div>
 
         <div id="window-controls">
@@ -55,23 +54,27 @@
 
     <div id="main" class=bg-image>
       <div class="content">
-        
+        <img id="ava" src="https://temp.com" class="avatar">
         <center>
           <h1 class="animate__animated animate__fadeInDown">HellCord</h1><br>
-          <p>Please login with your Discord Token</p>
-          <br><br>
-          <input type="password" placeholder="Token" class="input-main" id="token">
-          <br><br>
-          <button placeholder="Login" class="btn-main animate__animated animate__fadeInUp" onclick="getInfo();">Login</button>
-          <br><br><br><br><br>
-          <h4>How do I find my token?</h4>
-          <span>
-            <p>To find your Discord token follow <a class="link-main" href="https://www.youtube.com/LnBnm_tZlyU">these steps</a></p><br>
-          </span>
         </center>
+        <span>Current Channel: </span><span id="currentChannel">None</span>
+        <pre class="messaging">
+          <div id="channelSelector">
+          </div>
+        </pre>
+        <input type="text" placeholder="Message" class="input-main" id="message" style="width:90%;">
+        <button class="input-main" id="message" style="width:10%;">Send</button>
       </div>
+
+    <div id="user">
+        <br>
+        <a class="settings" href="settings.html">
+            <i class="fa fa-cog fa-1x" aria-hidden="true"></i>
+        </a>
     </div>
 
+    </div>
     <script>
       require('./renderer.js')
     </script>

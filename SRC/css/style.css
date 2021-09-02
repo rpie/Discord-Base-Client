@@ -209,3 +209,60 @@ body {
     padding: 10px;
     width: 300px;
 }
+
+ .title {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    line-height: 30px;
+    padding: 5px 15px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.avatar {
+  height: 30px;
+  width: 30px;
+}
+
+.user {
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.messaging {
+  border-radius: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  background: #33363d;
+  align-content: center;
+  height: 80%
+}
+
+
+.settings {
+  size: 50px;
+  color: white; width:200px;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.settings:hover {
+  size: 50px;
+  color: rgb(206, 206, 206);
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.userinfo {
+  size: 50px;
+  color: rgb(206, 206, 206);
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
