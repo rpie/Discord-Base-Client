@@ -41,6 +41,13 @@
                 // Basic logs for RPC data and op handlers
                 console.log(`%c[HellCord RPC]%c ${json}`, 'color: lightblue', 'color: white')
             }
+
+            if (json.t == "MESSAGE_DELETE") {
+                let msg = json.d.content;
+
+                // Deleted message logger
+                console.log(`%c[HellCord RPC]%c ${json}`, 'color: lightblue', 'color: white')
+            }
         }
     }
     
